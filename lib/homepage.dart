@@ -119,10 +119,23 @@ class _HomePageState extends State<HomePage> {
                     scrollDirection: Axis.horizontal,
                     itemCount: forecastMap!.length,
                     itemBuilder: (context, index) {
-                      return Container(
-                        width: 200,
-                        child: Column(
-                          children: [Text("${Jiffy.now().yMMMdjm}")],
+                      return Padding(
+                        padding: EdgeInsets.all(8.0),
+                        child: Container(
+                          margin: EdgeInsets.only(right: 3),
+                          width: 200,
+                          decoration: BoxDecoration(
+                              color: Colors.grey,
+                              borderRadius: BorderRadius.circular(10)),
+                          child: Column(
+                            children: [
+                              Text("${Jiffy.now().yMMMdjm}"),
+                              Image.asset(
+                                "assets/weather.png",
+                                scale: 5,
+                              )
+                            ],
+                          ),
                         ),
                       );
                     }),
