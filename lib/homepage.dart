@@ -81,6 +81,14 @@ class _HomePageState extends State<HomePage> {
       child: Scaffold(
         body: Container(
           width: double.infinity,
+          decoration: BoxDecoration(
+            image: DecorationImage(
+              image: NetworkImage(
+                "https://www.survivingwithandroid.com/wp-content/uploads/2014/11/android_weather_app.jpg",
+              ),
+              fit: BoxFit.cover,
+            ),
+          ),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
