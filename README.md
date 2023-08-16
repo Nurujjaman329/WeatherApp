@@ -2,6 +2,12 @@
 
 A new Flutter project.
 
+
+
+
+![Ui image](https://github.com/Nurujjaman329/WeatherApp/assets/57903604/059afeba-200c-446a-a52e-3bfb261c9947)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
